@@ -24,7 +24,8 @@ object Boot extends App {
         System.exit(0)
       }
 
-      start(path)
+      println(s"Start monitoring service on path: ${file.getAbsolutePath}")
+      start(file.getAbsolutePath)
     case _ =>
       println("Too many arguments!")
       System.exit(0)
